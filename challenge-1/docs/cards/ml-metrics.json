@@ -1,0 +1,13 @@
+{
+  "_comment": "This JSON file containing the ml-metrics",
+  "Name": "Gaurav Chaudhary",
+  "Kaggle Username": "gauarvchaudhary", 
+  "Team Name": "Algonauts",
+  "f1 scores": {
+    "_comment": "Here are the class wise f1 scores",
+    "alluvial soil": 0.9668,
+    "red soil": 0.9608,
+    "black soil": 0.9293,
+    "clay soil": 0.9231
+  }
+}
