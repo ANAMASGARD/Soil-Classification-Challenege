@@ -1,0 +1,39 @@
+{
+    "_comment": "This JSON file containing the ml-metrics",
+    "Name": "Annam.ai",
+    "Kaggle Username": "annam.ai",
+    "Team Name": "soilclassifiers",
+    "f1_scores": {
+      "_comment": "Binary classification results - Soil vs Non-Soil using Autoencoder Anomaly Detection",
+      "overall_f1_score": 0.9823,
+      "validation_f1_score": 0.9823,
+      "threshold_used": 0.0000,
+      "method": "Autoencoder-based Anomaly Detection",
+      "feature_extractor": "EfficientNetB0",
+      "binary_classification": {
+        "soil_class": {
+          "predictions": 376,
+          "percentage": 38.9
+        },
+        "non_soil_class": {
+          "predictions": 591,
+          "percentage": 61.1
+        }
+      }
+    },
+    "model_details": {
+      "architecture": "EfficientNetB0 + Autoencoder",
+      "input_shape": [224, 224, 3],
+      "feature_dimension": 1280,
+      "autoencoder_bottleneck": 64,
+      "training_epochs": 30,
+      "batch_size": 32,
+      "data_augmentation": true,
+      "threshold_selection": "Dynamic (50th, 75th, 90th percentile)"
+    },
+    "dataset_info": {
+      "total_test_samples": 967,
+      "augmentation_applied": true,
+      "validation_split": 0.2
+    }
+}
